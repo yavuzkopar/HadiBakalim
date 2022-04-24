@@ -1,5 +1,3 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -9,9 +7,9 @@ public class RingMenuController : MonoBehaviour
 {
     public static RingMenuController Singleton;
     private PlayerActions _playerActions;
-    [SerializeField] private GameObject denemelik;
-    public delegate void ActionToUse();
-    public List<ActionToUse> actions = new List<ActionToUse>();
+
+
+
 
     public List<OutHandScriptible> outHandActions;
     public List<GameObject> iconObjects = new List<GameObject>();
@@ -20,10 +18,13 @@ public class RingMenuController : MonoBehaviour
     public float currentAngle;
     public int selection;
     private int previousSelection;
-    public float animDelay;
+
+    private Animator _animator;
+    public bool isSelectionActive;
     private void Awake()
     {
         Singleton = this;
+        _animator = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();
     }
 
     public GameObject ringMenuParent;
@@ -47,20 +48,35 @@ public class RingMenuController : MonoBehaviour
     {
         ringMenuParent.SetActive(false);
 
-        Invoke("CanTurn",outHandActions[selection].animationDelay);
+        
        // TPoint.singleton.canTransform = true;
-        if (outHandActions.Count <= 0) return;
-            
-        outHandActions[selection].action.Doit();
-        outHandActions.Clear();
-            
-        Debug.Log("bıraktı");
-          
-        iconObjects.Clear();
-        for (int i = 0; i < ringMenuParent.transform.childCount; i++)
-        {                    
-            Destroy(ringMenuParent.transform.GetChild(i).gameObject);
-        }
+       if (outHandActions.Count >= 1 )
+       {
+           if (isSelectionActive)
+           {
+             //  Invoke("CanTurn", outHandActions[selection].animationDelay);
+             //  outHandActions[selection].action.Doit();
+             _animator.SetTrigger(outHandActions[selection].triggerAnim);
+           }
+           else
+                TPoint.singleton.canTransform = true;
+           outHandActions.Clear();
+
+           Debug.Log("bıraktı");
+
+           iconObjects.Clear();
+           for (int i = 0; i < ringMenuParent.transform.childCount; i++)
+           {
+               Destroy(ringMenuParent.transform.GetChild(i).gameObject);
+           }
+       }
+       else
+       {
+           TPoint.singleton.canTransform = true;
+           
+       }
+
+       previousSelection = 0;
     }
 
     void TryToGetActions()
@@ -82,8 +98,10 @@ public class RingMenuController : MonoBehaviour
                 GameObject obj = Instantiate(iconPrefab,ringMenuParent.transform);
                 iconObjects.Add(obj);
                 iconObjects[i].GetComponent<Image>().sprite = outHandActions[i].icon;
-                obj.transform.rotation = Quaternion.Euler(0, 0, 360 / (outHandActions.Count * 2));
-                obj.transform.Rotate(Vector3.forward, i * (360 / outHandActions.Count));
+                obj.transform.RotateAround(ringMenuParent.transform.position,Vector3.forward,360 / (outHandActions.Count * 2) );// = Quaternion.Euler(0, 0, 360 / (outHandActions.Count * 2));
+                obj.transform.RotateAround(ringMenuParent.transform.position,Vector3.forward, i * (360 / outHandActions.Count));
+                obj.transform.localEulerAngles = Vector3.zero;
+                
                 
             }
             
@@ -122,18 +140,33 @@ public class RingMenuController : MonoBehaviour
             
         }
         if(iconObjects.Count == 0) return;
+        
         normalizedMousePos = new Vector2(Mouse.current.position.x.ReadValue() - ringMenuParent.transform.position.x,
             Mouse.current.position.y.ReadValue() - ringMenuParent.transform.position.y);
         currentAngle = Mathf.Atan2(normalizedMousePos.y, normalizedMousePos.x) * Mathf.Rad2Deg;
         currentAngle = (currentAngle + 360) % 360;
         selection = (int)currentAngle / (360 / iconObjects.Count);
 
-        if (selection != previousSelection)
-        {
+        Vector2 mousePos = new Vector2(Mouse.current.position.x.ReadValue(), Mouse.current.position.y.ReadValue());
+       // if (selection != previousSelection)
+       // {
             selection = Mathf.Clamp(selection, 0, ringMenuParent.transform.childCount - 1);
             iconObjects[previousSelection].GetComponent<Image>().color = Color.red;
-            previousSelection = selection;
-            iconObjects[selection].GetComponent<Image>().color = Color.green;
-        }
+
+
+            if (Vector2.Distance(mousePos,iconObjects[selection].transform.position)<150f)
+            {
+                isSelectionActive = true;
+                previousSelection = selection;
+
+                iconObjects[selection].GetComponent<Image>().color = Color.green;
+            }
+            else
+            {
+               
+                isSelectionActive = false;
+            }
+                
+            //  }
     }
 }

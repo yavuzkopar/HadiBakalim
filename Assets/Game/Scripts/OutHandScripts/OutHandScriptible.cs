@@ -6,6 +6,5 @@ using UnityEngine;
 public class OutHandScriptible : ScriptableObject
 {
     public Sprite icon;
-    public OutHandAction action;
-    public float animationDelay;
+    public string triggerAnim = "";
 }

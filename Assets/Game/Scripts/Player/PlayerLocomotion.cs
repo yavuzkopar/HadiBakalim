@@ -39,6 +39,7 @@ public class PlayerLocomotion : MonoBehaviour
         moveDirection += cameraObject.right * inputHandler.horizontal;
         moveDirection.Normalize();
         moveDirection.y = 0;
+        movementSpeed = PlayerInfo.singleton.movementSpeed;
         moveDirection *= movementSpeed;
         
         
@@ -72,7 +73,7 @@ public class PlayerLocomotion : MonoBehaviour
         targetDir += cameraObject.right * inputHandler.horizontal;
         targetDir.Normalize();
         targetDir.y = 0;
-
+    
         if (targetDir == Vector3.zero)
         {
             targetDir = transform.forward;

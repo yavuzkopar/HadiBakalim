@@ -13,16 +13,25 @@ public class TPoint : MonoBehaviour
     public bool canTransform;
     public static TPoint singleton;
     public GameObject activeObject;
+    private MeshRenderer _meshRenderer;
     private void Awake()
     {
         singleton = this;
+        _meshRenderer = GetComponent<MeshRenderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
         ChangePos(canTransform);
-        
+        if (canTransform)
+        {
+            _meshRenderer.enabled = true;
+        }
+        else
+        {
+            _meshRenderer.enabled = false;
+        }
     }
 
     public void ChangePos(bool can)

@@ -12,6 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30a673b5bc145524bb92676024ec579f, type: 3}
   m_Name: Sit Action
   m_EditorClassIdentifier: 
-  icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
-  action: {fileID: 5587694745301569522, guid: 01a2ea0f9371c5f45b77f907fbaf9b97, type: 3}
-  animationDelay: 0.7
+  icon: {fileID: 21300000, guid: 40bc671eec4518e4493b412f42d18029, type: 3}
+  triggerAnim: block

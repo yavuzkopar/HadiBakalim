@@ -62,6 +62,15 @@ public partial class @PlayerActions : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""SolClick"",
+                    ""type"": ""Button"",
+                    ""id"": ""0293f3bc-24c0-437c-8701-5218150c5d85"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -152,6 +161,122 @@ public partial class @PlayerActions : IInputActionCollection2, IDisposable
                     ""action"": ""RingAcma"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""648f819e-5a51-4d68-9f8c-5c4249c9d2e9"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""SolClick"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
+        },
+        {
+            ""name"": ""ActionSelection"",
+            ""id"": ""9b55a0e5-98e4-4b49-b516-82591902905c"",
+            ""actions"": [
+                {
+                    ""name"": ""ActionSelectorr"",
+                    ""type"": ""Button"",
+                    ""id"": ""241e65b4-1693-40b2-a2f7-a0d7c493fcbb"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""2b9c8bd6-eef2-4ae0-a153-49eba4a532b3"",
+                    ""path"": ""<Keyboard>/1"",
+                    ""interactions"": """",
+                    ""processors"": ""Scale"",
+                    ""groups"": """",
+                    ""action"": ""ActionSelectorr"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e765e0f2-6637-4ffb-b731-b407dcb58e17"",
+                    ""path"": ""<Keyboard>/2"",
+                    ""interactions"": """",
+                    ""processors"": ""Scale(factor=2)"",
+                    ""groups"": """",
+                    ""action"": ""ActionSelectorr"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""3cc815ff-ca1a-4b06-9d8e-cb3258ac0992"",
+                    ""path"": ""<Keyboard>/3"",
+                    ""interactions"": """",
+                    ""processors"": ""Scale(factor=3)"",
+                    ""groups"": """",
+                    ""action"": ""ActionSelectorr"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""aba67f94-0ddd-49f4-a2b1-2f97dcdcf0f7"",
+                    ""path"": ""<Keyboard>/4"",
+                    ""interactions"": """",
+                    ""processors"": ""Scale(factor=4)"",
+                    ""groups"": """",
+                    ""action"": ""ActionSelectorr"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""042607f7-d914-4ad2-8073-219d49810495"",
+                    ""path"": ""<Keyboard>/5"",
+                    ""interactions"": """",
+                    ""processors"": ""Scale(factor=5)"",
+                    ""groups"": """",
+                    ""action"": ""ActionSelectorr"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""12396767-6e0f-47e0-9b6b-41bb146b7cbd"",
+                    ""path"": ""<Keyboard>/6"",
+                    ""interactions"": """",
+                    ""processors"": ""Scale(factor=6)"",
+                    ""groups"": """",
+                    ""action"": ""ActionSelectorr"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""38eb8562-7810-4fc6-b292-3cdf3e7453ee"",
+                    ""path"": ""<Keyboard>/7"",
+                    ""interactions"": """",
+                    ""processors"": ""Scale(factor=7)"",
+                    ""groups"": """",
+                    ""action"": ""ActionSelectorr"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""dbef4cbc-a22c-4f26-b8fc-a83860ebc096"",
+                    ""path"": ""<Keyboard>/8"",
+                    ""interactions"": """",
+                    ""processors"": ""Scale(factor=8)"",
+                    ""groups"": """",
+                    ""action"": ""ActionSelectorr"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -164,6 +289,10 @@ public partial class @PlayerActions : IInputActionCollection2, IDisposable
         m_PlayerMovement_Camera = m_PlayerMovement.FindAction("Camera", throwIfNotFound: true);
         m_PlayerMovement_RingAcma = m_PlayerMovement.FindAction("RingAcma", throwIfNotFound: true);
         m_PlayerMovement_SagClick = m_PlayerMovement.FindAction("SagClick", throwIfNotFound: true);
+        m_PlayerMovement_SolClick = m_PlayerMovement.FindAction("SolClick", throwIfNotFound: true);
+        // ActionSelection
+        m_ActionSelection = asset.FindActionMap("ActionSelection", throwIfNotFound: true);
+        m_ActionSelection_ActionSelectorr = m_ActionSelection.FindAction("ActionSelectorr", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -227,6 +356,7 @@ public partial class @PlayerActions : IInputActionCollection2, IDisposable
     private readonly InputAction m_PlayerMovement_Camera;
     private readonly InputAction m_PlayerMovement_RingAcma;
     private readonly InputAction m_PlayerMovement_SagClick;
+    private readonly InputAction m_PlayerMovement_SolClick;
     public struct PlayerMovementActions
     {
         private @PlayerActions m_Wrapper;
@@ -235,6 +365,7 @@ public partial class @PlayerActions : IInputActionCollection2, IDisposable
         public InputAction @Camera => m_Wrapper.m_PlayerMovement_Camera;
         public InputAction @RingAcma => m_Wrapper.m_PlayerMovement_RingAcma;
         public InputAction @SagClick => m_Wrapper.m_PlayerMovement_SagClick;
+        public InputAction @SolClick => m_Wrapper.m_PlayerMovement_SolClick;
         public InputActionMap Get() { return m_Wrapper.m_PlayerMovement; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -256,6 +387,9 @@ public partial class @PlayerActions : IInputActionCollection2, IDisposable
                 @SagClick.started -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnSagClick;
                 @SagClick.performed -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnSagClick;
                 @SagClick.canceled -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnSagClick;
+                @SolClick.started -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnSolClick;
+                @SolClick.performed -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnSolClick;
+                @SolClick.canceled -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnSolClick;
             }
             m_Wrapper.m_PlayerMovementActionsCallbackInterface = instance;
             if (instance != null)
@@ -272,15 +406,56 @@ public partial class @PlayerActions : IInputActionCollection2, IDisposable
                 @SagClick.started += instance.OnSagClick;
                 @SagClick.performed += instance.OnSagClick;
                 @SagClick.canceled += instance.OnSagClick;
+                @SolClick.started += instance.OnSolClick;
+                @SolClick.performed += instance.OnSolClick;
+                @SolClick.canceled += instance.OnSolClick;
             }
         }
     }
     public PlayerMovementActions @PlayerMovement => new PlayerMovementActions(this);
+
+    // ActionSelection
+    private readonly InputActionMap m_ActionSelection;
+    private IActionSelectionActions m_ActionSelectionActionsCallbackInterface;
+    private readonly InputAction m_ActionSelection_ActionSelectorr;
+    public struct ActionSelectionActions
+    {
+        private @PlayerActions m_Wrapper;
+        public ActionSelectionActions(@PlayerActions wrapper) { m_Wrapper = wrapper; }
+        public InputAction @ActionSelectorr => m_Wrapper.m_ActionSelection_ActionSelectorr;
+        public InputActionMap Get() { return m_Wrapper.m_ActionSelection; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(ActionSelectionActions set) { return set.Get(); }
+        public void SetCallbacks(IActionSelectionActions instance)
+        {
+            if (m_Wrapper.m_ActionSelectionActionsCallbackInterface != null)
+            {
+                @ActionSelectorr.started -= m_Wrapper.m_ActionSelectionActionsCallbackInterface.OnActionSelectorr;
+                @ActionSelectorr.performed -= m_Wrapper.m_ActionSelectionActionsCallbackInterface.OnActionSelectorr;
+                @ActionSelectorr.canceled -= m_Wrapper.m_ActionSelectionActionsCallbackInterface.OnActionSelectorr;
+            }
+            m_Wrapper.m_ActionSelectionActionsCallbackInterface = instance;
+            if (instance != null)
+            {
+                @ActionSelectorr.started += instance.OnActionSelectorr;
+                @ActionSelectorr.performed += instance.OnActionSelectorr;
+                @ActionSelectorr.canceled += instance.OnActionSelectorr;
+            }
+        }
+    }
+    public ActionSelectionActions @ActionSelection => new ActionSelectionActions(this);
     public interface IPlayerMovementActions
     {
         void OnMovement(InputAction.CallbackContext context);
         void OnCamera(InputAction.CallbackContext context);
         void OnRingAcma(InputAction.CallbackContext context);
         void OnSagClick(InputAction.CallbackContext context);
+        void OnSolClick(InputAction.CallbackContext context);
+    }
+    public interface IActionSelectionActions
+    {
+        void OnActionSelectorr(InputAction.CallbackContext context);
     }
 }

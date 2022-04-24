@@ -3,9 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public static class OutHandExtentions
-{
-    public static void TakeToHand(this GameObject obj, Transform trans)
+{    
+    public static void TakeToHand(this Transform trans,Transform makeChild)
     {
-        obj.transform.parent = trans;
+        trans.parent = makeChild;
+        trans.localPosition = Vector3.zero;
+        trans.localEulerAngles = Vector3.zero;
+        
     }
 }
