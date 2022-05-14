@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: 40bc671eec4518e4493b412f42d18029, type: 3}
   triggerAnim: block
+  distanceToUse: 5

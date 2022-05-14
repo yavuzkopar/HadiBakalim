@@ -5,7 +5,7 @@ using UnityEngine;
 public class AnimationEvents : MonoBehaviour
 {
     private Transform eldeki = null;
-    void InmeEvent()
+    void TakeToHandEvent()
     {
         eldeki = TPoint.singleton.activeObject.transform;
         eldeki.TakeToHand(PlayerInfo.singleton.rightHandTransform);

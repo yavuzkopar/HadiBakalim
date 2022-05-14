@@ -9,7 +9,7 @@ public class AttackBehav : StateMachineBehaviour
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
        gecici = PlayerInfo.singleton.movementSpeed;
-       PlayerInfo.singleton.movementSpeed = 0;
+       PlayerInfo.singleton.movementSpeed = .5f;
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks

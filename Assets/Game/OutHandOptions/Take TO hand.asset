@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Take TO hand
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: e0561f0590eb6e84385f767634ca2fb0, type: 3}
-  triggerAnim: sit
+  triggerAnim: take
+  distanceToUse: 2

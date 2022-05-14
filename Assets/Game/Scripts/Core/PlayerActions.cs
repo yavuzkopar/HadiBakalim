@@ -71,6 +71,15 @@ public partial class @PlayerActions : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Jump"",
+                    ""type"": ""Button"",
+                    ""id"": ""bd8179ff-60e8-497d-98c6-a5e0ca0fce8c"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -170,6 +179,17 @@ public partial class @PlayerActions : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""SolClick"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c740e301-a19e-4490-ba84-6dce25aa2685"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Jump"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -290,6 +310,7 @@ public partial class @PlayerActions : IInputActionCollection2, IDisposable
         m_PlayerMovement_RingAcma = m_PlayerMovement.FindAction("RingAcma", throwIfNotFound: true);
         m_PlayerMovement_SagClick = m_PlayerMovement.FindAction("SagClick", throwIfNotFound: true);
         m_PlayerMovement_SolClick = m_PlayerMovement.FindAction("SolClick", throwIfNotFound: true);
+        m_PlayerMovement_Jump = m_PlayerMovement.FindAction("Jump", throwIfNotFound: true);
         // ActionSelection
         m_ActionSelection = asset.FindActionMap("ActionSelection", throwIfNotFound: true);
         m_ActionSelection_ActionSelectorr = m_ActionSelection.FindAction("ActionSelectorr", throwIfNotFound: true);
@@ -357,6 +378,7 @@ public partial class @PlayerActions : IInputActionCollection2, IDisposable
     private readonly InputAction m_PlayerMovement_RingAcma;
     private readonly InputAction m_PlayerMovement_SagClick;
     private readonly InputAction m_PlayerMovement_SolClick;
+    private readonly InputAction m_PlayerMovement_Jump;
     public struct PlayerMovementActions
     {
         private @PlayerActions m_Wrapper;
@@ -366,6 +388,7 @@ public partial class @PlayerActions : IInputActionCollection2, IDisposable
         public InputAction @RingAcma => m_Wrapper.m_PlayerMovement_RingAcma;
         public InputAction @SagClick => m_Wrapper.m_PlayerMovement_SagClick;
         public InputAction @SolClick => m_Wrapper.m_PlayerMovement_SolClick;
+        public InputAction @Jump => m_Wrapper.m_PlayerMovement_Jump;
         public InputActionMap Get() { return m_Wrapper.m_PlayerMovement; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -390,6 +413,9 @@ public partial class @PlayerActions : IInputActionCollection2, IDisposable
                 @SolClick.started -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnSolClick;
                 @SolClick.performed -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnSolClick;
                 @SolClick.canceled -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnSolClick;
+                @Jump.started -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnJump;
+                @Jump.performed -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnJump;
+                @Jump.canceled -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnJump;
             }
             m_Wrapper.m_PlayerMovementActionsCallbackInterface = instance;
             if (instance != null)
@@ -409,6 +435,9 @@ public partial class @PlayerActions : IInputActionCollection2, IDisposable
                 @SolClick.started += instance.OnSolClick;
                 @SolClick.performed += instance.OnSolClick;
                 @SolClick.canceled += instance.OnSolClick;
+                @Jump.started += instance.OnJump;
+                @Jump.performed += instance.OnJump;
+                @Jump.canceled += instance.OnJump;
             }
         }
     }
@@ -453,6 +482,7 @@ public partial class @PlayerActions : IInputActionCollection2, IDisposable
         void OnRingAcma(InputAction.CallbackContext context);
         void OnSagClick(InputAction.CallbackContext context);
         void OnSolClick(InputAction.CallbackContext context);
+        void OnJump(InputAction.CallbackContext context);
     }
     public interface IActionSelectionActions
     {

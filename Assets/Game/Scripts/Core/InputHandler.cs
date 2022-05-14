@@ -11,20 +11,26 @@ public class InputHandler : MonoBehaviour
     public float mouseX;
     public float mouseY;
 
+   
     private CameraHandler _cameraHandler;
 
     private PlayerActions inputActions;
     private Vector2 movementInput;
     private Vector2 cameraInput;
     private TPoint tp;
-
+   
     private void Start()
     {
         _cameraHandler = CameraHandler.singleton;
         tp = TPoint.singleton;
-        
+       
     }
-
+    public void Sifirla()
+    {
+        vertical = 0;
+        horizontal = 0;
+        moveAmount = 0;
+    }
     private void FixedUpdate()
     {
         Debug.Log("bbb");
@@ -44,10 +50,28 @@ public class InputHandler : MonoBehaviour
         {
             Debug.Log("ccc");
         }
+
         
+
         
         
     }
+
+    public void Jump(Animator anim)
+    {
+       
+            if (inputActions.PlayerMovement.Jump.triggered)
+            {
+                anim.SetTrigger("jump");
+                Debug.Log("AFSD");
+            }
+               
+        else 
+            return;
+        
+    }
+
+
 
     public void OnEnable()
     {
@@ -79,4 +103,6 @@ public class InputHandler : MonoBehaviour
         mouseX = cameraInput.x;
         mouseY = cameraInput.y;
     }
+
+    
 }

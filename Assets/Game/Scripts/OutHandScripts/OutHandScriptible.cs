@@ -7,4 +7,5 @@ public class OutHandScriptible : ScriptableObject
 {
     public Sprite icon;
     public string triggerAnim = "";
+    public float distanceToUse = 2f;
 }

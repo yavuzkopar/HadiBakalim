@@ -5,5 +5,10 @@ using UnityEngine;
 
 public class OutHandOptions : MonoBehaviour
 {
-    public OutHandScriptible[] options;
+    public List<OutHandScriptible> options = new List<OutHandScriptible>();
+
+    public void AddOptionToList(OutHandScriptible option)
+    {
+        options.Add(option);
+    }
 }

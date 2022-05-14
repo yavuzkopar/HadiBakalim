@@ -22,8 +22,10 @@ public class AnimationHandler : MonoBehaviour
       Vector3 localVelocity = transform.InverseTransformDirection(_playerLocomotion.moveDirection.normalized);
       float fspeedZ = localVelocity.z;
       float fspeedX = localVelocity.x;
-           
+            
       _animator.SetFloat("Vertical", fspeedZ);
       _animator.SetFloat("Horizontal", fspeedX);
+      if(_playerLocomotion.isOnGround)
+        inputHandler.Jump(_animator);
     }
 }

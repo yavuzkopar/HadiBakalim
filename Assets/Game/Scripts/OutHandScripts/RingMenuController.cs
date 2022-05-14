@@ -87,7 +87,7 @@ public class RingMenuController : MonoBehaviour
         }
         else
         {
-            for (int i = 0; i < TPoint.singleton.activeObject.GetComponent<OutHandOptions>().options.Length; i++)
+            for (int i = 0; i < TPoint.singleton.activeObject.GetComponent<OutHandOptions>().options.Count; i++)
             {
                 outHandActions.Add(TPoint.singleton.activeObject.GetComponent<OutHandOptions>().options[i]); // outhandScriptibles
             }
@@ -131,11 +131,13 @@ public class RingMenuController : MonoBehaviour
         {
             OpenRingMenu();
             TPoint.singleton.canTransform = false;
+            
             // denemelik.GetComponent<OutHandOptions>().options[0].action.Doit();
         }
 
         if (_playerActions.PlayerMovement.RingAcma.WasReleasedThisFrame())
-        {            
+        {   
+               
             CloseRingMenu();
             
         }
@@ -154,7 +156,7 @@ public class RingMenuController : MonoBehaviour
             iconObjects[previousSelection].GetComponent<Image>().color = Color.red;
 
 
-            if (Vector2.Distance(mousePos,iconObjects[selection].transform.position)<150f)
+            if (Vector2.Distance(mousePos,iconObjects[selection].transform.position)<150f &&Vector3.Distance(TPoint.singleton.activeObject.transform.position,PlayerInfo.singleton.transform.position) <= outHandActions[selection].distanceToUse)
             {
                 isSelectionActive = true;
                 previousSelection = selection;
