@@ -14,6 +14,17 @@ public class PlayerConversant : MonoBehaviour
 
     [SerializeField] GameObject eventHolder;
 
+    AIConversant currentConversant;
+
+    public string GetConversantName()
+    {
+        return currentConversant.gameObject.name;
+    }
+    public void SetConversant(AIConversant conversant)
+    {
+        currentConversant = conversant;
+    }
+
     public void StartDialogue(Dialogue newDialogue)
     {
         
@@ -26,6 +37,7 @@ public class PlayerConversant : MonoBehaviour
     {
         currentDialogue = null;
         currentNode = null;
+        currentConversant = null;
         GetComponent<Animator>().SetTrigger("idle");
         onConversationUpdated();
     }
@@ -44,18 +56,18 @@ public class PlayerConversant : MonoBehaviour
     public IEnumerable<DialogueNode> GetChoises()
     {
         if(currentDialogue != null)
-            return currentDialogue.GetPlayerChildren(currentNode);
+            return FilterOnCondition(currentDialogue.GetPlayerChildren(currentNode));
         else return null;
     }
     public void Next()
     {
-        int playerResponses = currentDialogue.GetPlayerChildren(currentNode).ToArray().Count();
+        int playerResponses = FilterOnCondition(currentDialogue.GetPlayerChildren(currentNode)).ToArray().Count();
         if (playerResponses >0)
         {
             onConversationUpdated();
             return;
         }
-        DialogueNode[] children = currentDialogue.GetAllChildren(currentNode).ToArray();
+        DialogueNode[] children = FilterOnCondition(currentDialogue.GetAllChildren(currentNode)).ToArray();
         int randomIndex= UnityEngine.Random.Range(0,children.Count());
         currentNode = children[randomIndex]; 
         onConversationUpdated();
@@ -63,7 +75,7 @@ public class PlayerConversant : MonoBehaviour
     public bool HasNext()
     {
         
-        return currentDialogue.GetAllChildren(currentNode).Count() > 0;
+        return FilterOnCondition(currentDialogue.GetAllChildren(currentNode)).Count() > 0;
     }
 
     public void SelectChoise(DialogueNode chosen)
@@ -71,6 +83,16 @@ public class PlayerConversant : MonoBehaviour
         currentNode = chosen;
         TriggerAction();
 
+    }
+    IEnumerable<DialogueNode> FilterOnCondition(IEnumerable<DialogueNode> inputNode)
+    {
+        foreach (DialogueNode item in inputNode)
+        {
+            if(item.CheckCondition())
+            {
+                yield return item;
+            }
+        }
     }
     void TriggerAction()
     {

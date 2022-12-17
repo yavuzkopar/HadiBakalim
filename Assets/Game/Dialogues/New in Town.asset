@@ -17,6 +17,7 @@ MonoBehaviour:
   text: aasdffsdad
   children:
   - 86dcf12b-c834-4b02-9664-238ef7658442
+  - 4d5da648-c95e-403a-9689-ecf96abf372f
   rect:
     serializedVersion: 2
     x: 604
@@ -24,6 +25,7 @@ MonoBehaviour:
     width: 200
     height: 100
   actionToTrigger: 
+  kondisyonlar: []
 --- !u!114 &-7069916470749389463
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50,6 +52,8 @@ MonoBehaviour:
     width: 200
     height: 100
   actionToTrigger: 
+  kondisyonlar:
+  - yapma
 --- !u!114 &-6388069374527242684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64,7 +68,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   whoisSpeaking: 0
   isPlayerSpeaking: 1
-  text: 
+  text: adsssssss
   children: []
   rect:
     serializedVersion: 2
@@ -73,6 +77,7 @@ MonoBehaviour:
     width: 200
     height: 100
   actionToTrigger: can
+  kondisyonlar: []
 --- !u!114 &-4688680984067786262
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -99,6 +104,7 @@ MonoBehaviour:
     width: 200
     height: 100
   actionToTrigger: 
+  kondisyonlar: []
 --- !u!114 &-3202171634237627650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -122,6 +128,7 @@ MonoBehaviour:
     width: 200
     height: 100
   actionToTrigger: 
+  kondisyonlar: []
 --- !u!114 &-1180866544359838899
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -147,6 +154,7 @@ MonoBehaviour:
     width: 200
     height: 100
   actionToTrigger: 
+  kondisyonlar: []
 --- !u!114 &-707249723223351489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -170,6 +178,7 @@ MonoBehaviour:
     width: 200
     height: 100
   actionToTrigger: 
+  kondisyonlar: []
 --- !u!114 &-507488171274738683
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -193,6 +202,7 @@ MonoBehaviour:
     width: 200
     height: 100
   actionToTrigger: 
+  kondisyonlar: []
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -219,6 +229,31 @@ MonoBehaviour:
   - {fileID: 8852396740482952090}
   - {fileID: -707249723223351489}
   - {fileID: -6388069374527242684}
+  - {fileID: 198969893475715074}
+--- !u!114 &198969893475715074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5403a132185ba749b56a1f25330e2c2, type: 3}
+  m_Name: 4d5da648-c95e-403a-9689-ecf96abf372f
+  m_EditorClassIdentifier: 
+  whoisSpeaking: 0
+  isPlayerSpeaking: 1
+  text: adssssssssssss
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 814
+    y: 419
+    width: 200
+    height: 100
+  actionToTrigger: 
+  kondisyonlar: []
 --- !u!114 &928884698719608780
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -242,6 +277,7 @@ MonoBehaviour:
     width: 200
     height: 100
   actionToTrigger: 
+  kondisyonlar: []
 --- !u!114 &2052005059786004801
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -265,6 +301,7 @@ MonoBehaviour:
     width: 200
     height: 100
   actionToTrigger: 
+  kondisyonlar: []
 --- !u!114 &2880271358467636755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -288,6 +325,7 @@ MonoBehaviour:
     width: 200
     height: 100
   actionToTrigger: 
+  kondisyonlar: []
 --- !u!114 &2881873813489507237
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -311,6 +349,7 @@ MonoBehaviour:
     width: 200
     height: 100
   actionToTrigger: 
+  kondisyonlar: []
 --- !u!114 &5173048804117378222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -334,6 +373,7 @@ MonoBehaviour:
     width: 200
     height: 100
   actionToTrigger: 
+  kondisyonlar: []
 --- !u!114 &5219047688017935263
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -360,6 +400,8 @@ MonoBehaviour:
     width: 200
     height: 100
   actionToTrigger: 
+  kondisyonlar:
+  - baska
 --- !u!114 &6725480625774390170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -385,6 +427,7 @@ MonoBehaviour:
     width: 200
     height: 100
   actionToTrigger: 
+  kondisyonlar: []
 --- !u!114 &7332561284555741791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -412,6 +455,7 @@ MonoBehaviour:
     width: 200
     height: 100
   actionToTrigger: 
+  kondisyonlar: []
 --- !u!114 &8055716818972670812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -435,7 +479,10 @@ MonoBehaviour:
     y: 93
     width: 200
     height: 100
-  actionToTrigger: xxxx
+  actionToTrigger: a1
+  kondisyonlar:
+  - "sald\u0131r"
+  - yapma
 --- !u!114 &8852396740482952090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -459,3 +506,4 @@ MonoBehaviour:
     width: 200
     height: 100
   actionToTrigger: 
+  kondisyonlar: []

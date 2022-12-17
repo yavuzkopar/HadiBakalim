@@ -5,8 +5,11 @@ using UnityEngine.Events;
 
 public class StoryEventTrigger : MonoBehaviour
 {
+
     [SerializeField] string action;
     [SerializeField] UnityEvent onTrigger;
+
+
 
     public void Trigger(string actionToTrigger)
     {
@@ -15,4 +18,8 @@ public class StoryEventTrigger : MonoBehaviour
             onTrigger?.Invoke();
         }
     }
+    
+   
+
+
 }

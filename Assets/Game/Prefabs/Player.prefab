@@ -938,7 +938,7 @@ GameObject:
   - component: {fileID: 781708940}
   - component: {fileID: 92719028}
   - component: {fileID: 293116433}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -1076,7 +1076,7 @@ MonoBehaviour:
   normalCamera: {fileID: 0}
   movementSpeed: 5
   fullSpeed: 5
-  rotationSpeed: 10
+  rotationSpeed: 5
   JumpTimeout: 0.5
   FallTimeout: 0.15
   JumpHeight: 1.2
@@ -1084,7 +1084,7 @@ MonoBehaviour:
   _verticalVelocity: 0
   targetdirect: {x: 0, y: 0, z: 0}
   origin: {x: 0, y: 0.4, z: 0}
-  radius: 0.25
+  radius: 0.2
   gravity: 0
   sayac: 0
   layerMask:

@@ -54,9 +54,10 @@ public class RingMenuController : MonoBehaviour
        {
            if (isSelectionActive)
            {
-             //  Invoke("CanTurn", outHandActions[selection].animationDelay);
-             //  outHandActions[selection].action.Doit();
-             _animator.SetTrigger(outHandActions[selection].triggerAnim);
+                //  Invoke("CanTurn", outHandActions[selection].animationDelay);
+                //  outHandActions[selection].action.Doit();
+                // _animator.SetTrigger(outHandActions[selection].triggerAnim);
+                outHandActions[selection].eventToTrigger?.Invoke();
            }
            else
                 TPoint.singleton.canTransform = true;
@@ -81,6 +82,7 @@ public class RingMenuController : MonoBehaviour
 
     void TryToGetActions()
     {
+        if(TPoint.singleton.activeObject == null) return;
         if (TPoint.singleton.activeObject.GetComponent<OutHandOptions>() == null)
         {
             return;

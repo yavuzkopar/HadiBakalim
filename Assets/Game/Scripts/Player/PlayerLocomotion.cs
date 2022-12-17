@@ -152,22 +152,28 @@ public class PlayerLocomotion : MonoBehaviour
     [SerializeField] float radius,gravity,sayac;
     [SerializeField] LayerMask layerMask;
     RaycastHit hit1;
+    RaycastHit sphereHit;
     void GroundCheck()
     {
          canDo = Physics.CheckSphere(transform.position + origin,radius,layerMask);
-         bool deneyim = Physics.SphereCast(transform.position+origin,radius/2, Vector3.down,out RaycastHit hitt,origin.y,layerMask);
+         bool deneyim = Physics.SphereCast(transform.position+origin,radius/2, Vector3.down,out sphereHit,origin.y+0.1f,layerMask);
           bool deneyimmm = Physics.Raycast(transform.position+origin, Vector3.down,out hit1,origin.y+0.1f,layerMask);
        //  Debug.DrawRay(transform.position + origin,Vector3.down,Color.magenta);
        //  Debug.DrawLine(transform.position+origin,hitt.point,Color.magenta);
-         if (!deneyimmm)
-         {
-              _verticalVelocity += Gravity * Time.deltaTime;
-              isOnGround = false;
-         }
+        if (!deneyimmm)
+        {
+             _verticalVelocity += Gravity * Time.deltaTime;
+             isOnGround = false;
+        }
+       //   if (!deneyim)
+       //  {
+       //       _verticalVelocity += Gravity * Time.deltaTime;
+       //       isOnGround = false;
+       //  }
          else
          {
              _verticalVelocity = 0f;
-           //  transform.position = hitt.point;
+          //   transform.position = sphereHit.point;
            transform.position = hit1.point;
            isOnGround = true;
              if (_playerActions.PlayerMovement.Jump.triggered && _jumpTimeoutDelta <= 0.0f)

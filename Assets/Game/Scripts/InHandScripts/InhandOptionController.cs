@@ -132,7 +132,8 @@ public class InhandOptionController : MonoBehaviour
             // aksiyonu gerceklestir
             if (inHandOptions.Count >=1)
             {
-                _animator.SetTrigger(inHandOptions[selection].triggerAnim);
+                //  _animator.SetTrigger(inHandOptions[selection].triggerAnim);
+                inHandOptions[selection].eventToTrigger?.Invoke();
             }
             
            // EmptyList();// eldeki obje degistiginde

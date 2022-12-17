@@ -1,0 +1,671 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9145897955740836590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5403a132185ba749b56a1f25330e2c2, type: 3}
+  m_Name: c2845ef7-02eb-4590-acc9-92f61ca4307c
+  m_EditorClassIdentifier: 
+  whoisSpeaking: 0
+  isPlayerSpeaking: 0
+  text: "\xE7ok de\u011Ferli olan kolyem \xE7al\u0131nd\u0131"
+  children:
+  - caeea3ba-7d72-4ccd-88d9-0fdee3b13b0c
+  - 8af31201-ca4d-4f5d-af7a-da6aa2aa8c23
+  rect:
+    serializedVersion: 2
+    x: 1415
+    y: 61
+    width: 200
+    height: 100
+  actionToTrigger: 
+  kondisyonlar: []
+--- !u!114 &-8519443512604622477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5403a132185ba749b56a1f25330e2c2, type: 3}
+  m_Name: b15b0175-21f6-49da-afb2-2057a3a597ff
+  m_EditorClassIdentifier: 
+  whoisSpeaking: 0
+  isPlayerSpeaking: 0
+  text: senden bir ricam olacak
+  children:
+  - bd850ca8-235a-4b12-b961-42e43269aa02
+  - 622992cb-471b-473e-b821-d3d7d16dc760
+  - c87394f6-caba-464c-a403-ed9f3b80124e
+  rect:
+    serializedVersion: 2
+    x: 431
+    y: 165
+    width: 200
+    height: 100
+  actionToTrigger: 
+  kondisyonlar:
+  - HasNoQuest(KayipKolye)
+--- !u!114 &-7787552952745991089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5403a132185ba749b56a1f25330e2c2, type: 3}
+  m_Name: 67484786-9e34-4128-9353-f5a383a30e73
+  m_EditorClassIdentifier: 
+  whoisSpeaking: 0
+  isPlayerSpeaking: 1
+  text: sen bilirsin
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1128
+    y: 405
+    width: 200
+    height: 100
+  actionToTrigger: 
+  kondisyonlar: []
+--- !u!114 &-7253394532184346457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5403a132185ba749b56a1f25330e2c2, type: 3}
+  m_Name: 45d2374d-8657-4869-be8d-dacdc1144e95
+  m_EditorClassIdentifier: 
+  whoisSpeaking: 0
+  isPlayerSpeaking: 1
+  text: 
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 609
+    y: 532
+    width: 200
+    height: 100
+  actionToTrigger: 
+  kondisyonlar: []
+--- !u!114 &-6508125953580421038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5403a132185ba749b56a1f25330e2c2, type: 3}
+  m_Name: bd850ca8-235a-4b12-b961-42e43269aa02
+  m_EditorClassIdentifier: 
+  whoisSpeaking: 0
+  isPlayerSpeaking: 1
+  text: "sana nas\u0131l yard\u0131mc\u0131 olabilirim"
+  children:
+  - c2845ef7-02eb-4590-acc9-92f61ca4307c
+  rect:
+    serializedVersion: 2
+    x: 699
+    y: 80
+    width: 200
+    height: 100
+  actionToTrigger: 
+  kondisyonlar: []
+--- !u!114 &-5031576197344687406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5403a132185ba749b56a1f25330e2c2, type: 3}
+  m_Name: 7e268128-fd9e-4704-be38-5f19d19a9242
+  m_EditorClassIdentifier: 
+  whoisSpeaking: 0
+  isPlayerSpeaking: 1
+  text: "olmaz m\u0131"
+  children:
+  - 8b14ccb1-4104-4698-ae5e-574ede042cc0
+  - 870cad1f-8082-4295-ae37-cdcfc647daaf
+  rect:
+    serializedVersion: 2
+    x: 1123
+    y: 284
+    width: 200
+    height: 100
+  actionToTrigger: 
+  kondisyonlar: []
+--- !u!114 &-4154253020834609823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5403a132185ba749b56a1f25330e2c2, type: 3}
+  m_Name: 622992cb-471b-473e-b821-d3d7d16dc760
+  m_EditorClassIdentifier: 
+  whoisSpeaking: 0
+  isPlayerSpeaking: 1
+  text: "yard\u0131mc\u0131 olabilirim ama benimle bir ak\u015Fam yeme\u011Fi yersen"
+  children:
+  - 4f506741-9817-45cd-bf2b-2f07267c43e3
+  - aa05369b-55e5-4d90-b3d5-1639cb528b09
+  rect:
+    serializedVersion: 2
+    x: 697
+    y: 185
+    width: 200
+    height: 100
+  actionToTrigger: 
+  kondisyonlar: []
+--- !u!114 &-3828431298038392739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5403a132185ba749b56a1f25330e2c2, type: 3}
+  m_Name: 8b14ccb1-4104-4698-ae5e-574ede042cc0
+  m_EditorClassIdentifier: 
+  whoisSpeaking: 0
+  isPlayerSpeaking: 0
+  text: "bilmem ki e\u011Fer yard\u0131m edersen olabilir"
+  children:
+  - e09d8d7d-453e-4c21-a65d-496a25641889
+  rect:
+    serializedVersion: 2
+    x: 1333
+    y: 286
+    width: 200
+    height: 100
+  actionToTrigger: 
+  kondisyonlar: []
+--- !u!114 &-3710656789926218644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5403a132185ba749b56a1f25330e2c2, type: 3}
+  m_Name: c87394f6-caba-464c-a403-ed9f3b80124e
+  m_EditorClassIdentifier: 
+  whoisSpeaking: 0
+  isPlayerSpeaking: 1
+  text: "ne yaz\u0131k ki \u015Fu anda \xE7ok me\u015Fgul\xFCm"
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 689
+    y: 291
+    width: 200
+    height: 100
+  actionToTrigger: 
+  kondisyonlar: []
+--- !u!114 &-3646156190392395059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5403a132185ba749b56a1f25330e2c2, type: 3}
+  m_Name: ff567c80-25dc-4c18-8cf0-58351e69e00b
+  m_EditorClassIdentifier: 
+  whoisSpeaking: 0
+  isPlayerSpeaking: 1
+  text: "peki can\u0131m "
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 2088
+    y: 35
+    width: 200
+    height: 100
+  actionToTrigger: HasQuest(KayipKolye)
+  kondisyonlar: []
+--- !u!114 &-3619923207165165946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5403a132185ba749b56a1f25330e2c2, type: 3}
+  m_Name: 81cbe9d7-cc3c-4d23-989b-d507bc491094
+  m_EditorClassIdentifier: 
+  whoisSpeaking: 0
+  isPlayerSpeaking: 0
+  text: "nas\u0131l gidiyor Kolye i\u015Fi"
+  children:
+  - c69658dc-2ee7-4b41-8094-2893f7d1a447
+  - e15fe678-1336-4b98-b90d-79da51c7b8d5
+  rect:
+    serializedVersion: 2
+    x: 422
+    y: 406
+    width: 200
+    height: 100
+  actionToTrigger: 
+  kondisyonlar:
+  - HasQuest(KayipKolye)
+--- !u!114 &-1861793652382238575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5403a132185ba749b56a1f25330e2c2, type: 3}
+  m_Name: d09dcaa1-dd02-475d-8ee9-c701e26e5fc8
+  m_EditorClassIdentifier: 
+  whoisSpeaking: 0
+  isPlayerSpeaking: 0
+  text: Hey selam
+  children:
+  - e5730d19-dc62-40cc-b5b3-988d8147cc9f
+  - 98d31918-a799-4701-bb93-6c7aafb5ca94
+  rect:
+    serializedVersion: 2
+    x: 2
+    y: 251
+    width: 200
+    height: 100
+  actionToTrigger: 
+  kondisyonlar: []
+--- !u!114 &-1531990327967744880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5403a132185ba749b56a1f25330e2c2, type: 3}
+  m_Name: 98d31918-a799-4701-bb93-6c7aafb5ca94
+  m_EditorClassIdentifier: 
+  whoisSpeaking: 0
+  isPlayerSpeaking: 1
+  text: "i\u015Fim var"
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 214
+    y: 286
+    width: 200
+    height: 100
+  actionToTrigger: 
+  kondisyonlar: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6620e06ab08bea1428a3a2909632ae66, type: 3}
+  m_Name: Ajda
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: -1861793652382238575}
+  - {fileID: 2339169575101009669}
+  - {fileID: -1531990327967744880}
+  - {fileID: -8519443512604622477}
+  - {fileID: -6508125953580421038}
+  - {fileID: -4154253020834609823}
+  - {fileID: -3710656789926218644}
+  - {fileID: 8385783752523953725}
+  - {fileID: 9219879656852082412}
+  - {fileID: -5031576197344687406}
+  - {fileID: 3558210821336680905}
+  - {fileID: -9145897955740836590}
+  - {fileID: -7787552952745991089}
+  - {fileID: -3828431298038392739}
+  - {fileID: 7976535563264066836}
+  - {fileID: 7614472920834441114}
+  - {fileID: 7465192425781997751}
+  - {fileID: -3646156190392395059}
+  - {fileID: 8061301466152504652}
+  - {fileID: 1269102929586036548}
+  - {fileID: -3619923207165165946}
+  - {fileID: 2415080413614087531}
+  - {fileID: 9150647053132640900}
+  - {fileID: -7253394532184346457}
+  - {fileID: 614585316276697757}
+--- !u!114 &614585316276697757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5403a132185ba749b56a1f25330e2c2, type: 3}
+  m_Name: e15fe678-1336-4b98-b90d-79da51c7b8d5
+  m_EditorClassIdentifier: 
+  whoisSpeaking: 0
+  isPlayerSpeaking: 1
+  text: kolyen bende
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 669
+    y: 444
+    width: 200
+    height: 100
+  actionToTrigger: 
+  kondisyonlar:
+  - Hadi Bakim
+--- !u!114 &1269102929586036548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5403a132185ba749b56a1f25330e2c2, type: 3}
+  m_Name: 9dafce33-a72a-4193-91a2-80d503fc5834
+  m_EditorClassIdentifier: 
+  whoisSpeaking: 0
+  isPlayerSpeaking: 1
+  text: "iyi madem kolyeni bulacak ba\u015Fka birini bul"
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1548
+    y: 380
+    width: 200
+    height: 100
+  actionToTrigger: 
+  kondisyonlar: []
+--- !u!114 &2339169575101009669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5403a132185ba749b56a1f25330e2c2, type: 3}
+  m_Name: e5730d19-dc62-40cc-b5b3-988d8147cc9f
+  m_EditorClassIdentifier: 
+  whoisSpeaking: 0
+  isPlayerSpeaking: 1
+  text: selam
+  children:
+  - b15b0175-21f6-49da-afb2-2057a3a597ff
+  - 81cbe9d7-cc3c-4d23-989b-d507bc491094
+  - ca97a7cb-8d2e-41fd-a052-866a5d0470a6
+  rect:
+    serializedVersion: 2
+    x: 222
+    y: 165
+    width: 200
+    height: 100
+  actionToTrigger: 
+  kondisyonlar: []
+--- !u!114 &2415080413614087531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5403a132185ba749b56a1f25330e2c2, type: 3}
+  m_Name: c69658dc-2ee7-4b41-8094-2893f7d1a447
+  m_EditorClassIdentifier: 
+  whoisSpeaking: 0
+  isPlayerSpeaking: 1
+  text: iyi
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 689
+    y: 347
+    width: 200
+    height: 100
+  actionToTrigger: 
+  kondisyonlar: []
+--- !u!114 &3558210821336680905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5403a132185ba749b56a1f25330e2c2, type: 3}
+  m_Name: e09d8d7d-453e-4c21-a65d-496a25641889
+  m_EditorClassIdentifier: 
+  whoisSpeaking: 0
+  isPlayerSpeaking: 1
+  text: o zaman dinliyorum
+  children:
+  - c2845ef7-02eb-4590-acc9-92f61ca4307c
+  rect:
+    serializedVersion: 2
+    x: 1128
+    y: 150
+    width: 200
+    height: 100
+  actionToTrigger: 
+  kondisyonlar: []
+--- !u!114 &7465192425781997751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5403a132185ba749b56a1f25330e2c2, type: 3}
+  m_Name: df94ff70-2443-41b5-8178-93b026af0062
+  m_EditorClassIdentifier: 
+  whoisSpeaking: 0
+  isPlayerSpeaking: 0
+  text: "kolyem \u015Furda burda g\xF6r\xFCld\xFC olaylar olaylar oldu nolur bana
+    yard\u0131m et \xE7ok \xF6nemli"
+  children:
+  - ff567c80-25dc-4c18-8cf0-58351e69e00b
+  rect:
+    serializedVersion: 2
+    x: 1878
+    y: 35
+    width: 200
+    height: 100
+  actionToTrigger: 
+  kondisyonlar: []
+--- !u!114 &7614472920834441114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5403a132185ba749b56a1f25330e2c2, type: 3}
+  m_Name: 8af31201-ca4d-4f5d-af7a-da6aa2aa8c23
+  m_EditorClassIdentifier: 
+  whoisSpeaking: 0
+  isPlayerSpeaking: 1
+  text: "kay\u0131p e\u015Fya b\xFCrosuna sor bi zahmet"
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1676
+    y: 155
+    width: 200
+    height: 100
+  actionToTrigger: 
+  kondisyonlar: []
+--- !u!114 &7976535563264066836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5403a132185ba749b56a1f25330e2c2, type: 3}
+  m_Name: caeea3ba-7d72-4ccd-88d9-0fdee3b13b0c
+  m_EditorClassIdentifier: 
+  whoisSpeaking: 0
+  isPlayerSpeaking: 1
+  text: "h\u0131mm dedektiflik. E\u011Flencceliye benziyor"
+  children:
+  - df94ff70-2443-41b5-8178-93b026af0062
+  rect:
+    serializedVersion: 2
+    x: 1668
+    y: 35
+    width: 200
+    height: 100
+  actionToTrigger: 
+  kondisyonlar: []
+--- !u!114 &8061301466152504652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5403a132185ba749b56a1f25330e2c2, type: 3}
+  m_Name: 870cad1f-8082-4295-ae37-cdcfc647daaf
+  m_EditorClassIdentifier: 
+  whoisSpeaking: 0
+  isPlayerSpeaking: 0
+  text: Olmaz
+  children:
+  - 9dafce33-a72a-4193-91a2-80d503fc5834
+  rect:
+    serializedVersion: 2
+    x: 1338
+    y: 380
+    width: 200
+    height: 100
+  actionToTrigger: 
+  kondisyonlar:
+  - CHARIZMA < 5
+--- !u!114 &8385783752523953725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5403a132185ba749b56a1f25330e2c2, type: 3}
+  m_Name: 4f506741-9817-45cd-bf2b-2f07267c43e3
+  m_EditorClassIdentifier: 
+  whoisSpeaking: 0
+  isPlayerSpeaking: 0
+  text: "neden olmas\u0131n"
+  children:
+  - e09d8d7d-453e-4c21-a65d-496a25641889
+  rect:
+    serializedVersion: 2
+    x: 912
+    y: 159
+    width: 200
+    height: 100
+  actionToTrigger: 
+  kondisyonlar: []
+--- !u!114 &9150647053132640900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5403a132185ba749b56a1f25330e2c2, type: 3}
+  m_Name: ca97a7cb-8d2e-41fd-a052-866a5d0470a6
+  m_EditorClassIdentifier: 
+  whoisSpeaking: 0
+  isPlayerSpeaking: 0
+  text: "konu\u015Facak bi \u015Fey bulamad\u0131m"
+  children:
+  - 45d2374d-8657-4869-be8d-dacdc1144e95
+  rect:
+    serializedVersion: 2
+    x: 399
+    y: 532
+    width: 200
+    height: 100
+  actionToTrigger: 
+  kondisyonlar: []
+--- !u!114 &9219879656852082412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5403a132185ba749b56a1f25330e2c2, type: 3}
+  m_Name: aa05369b-55e5-4d90-b3d5-1639cb528b09
+  m_EditorClassIdentifier: 
+  whoisSpeaking: 0
+  isPlayerSpeaking: 0
+  text: "olur mu \xF6yle \u015Fey"
+  children:
+  - 7e268128-fd9e-4704-be38-5f19d19a9242
+  - 67484786-9e34-4128-9353-f5a383a30e73
+  rect:
+    serializedVersion: 2
+    x: 912
+    y: 284
+    width: 200
+    height: 100
+  actionToTrigger: 
+  kondisyonlar: []

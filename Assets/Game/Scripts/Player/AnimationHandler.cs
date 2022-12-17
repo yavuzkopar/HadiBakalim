@@ -28,4 +28,8 @@ public class AnimationHandler : MonoBehaviour
       if(_playerLocomotion.isOnGround)
         inputHandler.Jump(_animator);
     }
+    public void AnimatorSetTrigger(string trigger)
+    {
+        _animator.SetTrigger(trigger);
+    }
 }

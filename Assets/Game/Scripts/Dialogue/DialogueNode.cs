@@ -21,6 +21,8 @@ public class DialogueNode : ScriptableObject
     [SerializeField] Rect rect = new Rect(0,0,200,100);
 
     [SerializeField] string actionToTrigger;
+    [SerializeField] string[] kondisyonlar;
+  
     
 
     public string GetAction()
@@ -47,6 +49,21 @@ public class DialogueNode : ScriptableObject
     public bool IsPlayerSpeaking()
     {
         return isPlayerSpeaking;
+    }
+    public bool CheckCondition()
+    {
+        foreach (string item in kondisyonlar)
+        {
+            if(!DialogueCondition.singleton.parcacik.Contains(item))
+            {
+                return false;
+            }
+            
+        }
+        return true;
+            
+        
+        
     }
 #if UNITY_EDITOR
     public void SetPosition(Vector2 value)
@@ -89,5 +106,7 @@ public class DialogueNode : ScriptableObject
        isPlayerSpeaking = v;
        EditorUtility.SetDirty(this);
     }
+
+    
 #endif
 }

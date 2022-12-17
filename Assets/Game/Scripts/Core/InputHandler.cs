@@ -25,12 +25,21 @@ public class InputHandler : MonoBehaviour
         tp = TPoint.singleton;
        
     }
+    public void Invoked()
+    {
+        Invoke("Abbov",1f);
+    }
+    void Abbov()
+    {
+        GetComponent<CapsuleCollider>().isTrigger = false;
+    }
     public void Sifirla()
     {
         vertical = 0;
         horizontal = 0;
         moveAmount = 0;
     }
+
     private void FixedUpdate()
     {
         Debug.Log("bbb");
@@ -41,7 +50,8 @@ public class InputHandler : MonoBehaviour
             _cameraHandler.FollowTarget(delta);
             if (inputActions.PlayerMovement.SagClick.inProgress && TPoint.singleton.canTransform)
             {
-                _cameraHandler.HandleCameraRotation(delta, mouseX, mouseY);
+                
+                    _cameraHandler.HandleCameraRotation(delta, mouseX, mouseY);
                
                Debug.Log("hhhh");
             }

@@ -9,6 +9,7 @@ public class OutHandOptions : MonoBehaviour
 
     public void AddOptionToList(OutHandScriptible option)
     {
-        options.Add(option);
+        if(!options.Contains(option))
+            options.Add(option);
     }
 }

@@ -6,6 +6,7 @@ public class DialogueUI : MonoBehaviour
 {
     PlayerConversant playerConversant;
    [SerializeField] TextMeshProUGUI AIText;
+   [SerializeField] TextMeshProUGUI conversantNameText;
    [SerializeField] Button nextButton;
    [SerializeField] Transform choiseRoot;
    [SerializeField] GameObject choisePrefab;
@@ -26,6 +27,7 @@ public class DialogueUI : MonoBehaviour
             return;
         }
         AIText.text = playerConversant.GetText();
+        conversantNameText.text = playerConversant.GetConversantName();
     //    nextButton.gameObject.SetActive(playerConversant.HasNext());
         foreach (Transform item in choiseRoot)
         {

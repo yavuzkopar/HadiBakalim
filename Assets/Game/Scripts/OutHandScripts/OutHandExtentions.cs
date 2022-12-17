@@ -9,6 +9,13 @@ public static class OutHandExtentions
         trans.parent = makeChild;
         trans.localPosition = Vector3.zero;
         trans.localEulerAngles = Vector3.zero;
+        if (trans.GetComponent<Rigidbody>() == null) return;
         
+        trans.GetComponent<Rigidbody>().MakeRbDisable();
+        
+    }
+    public static void MakeRbDisable(this Rigidbody rigidbody)
+    {
+        rigidbody.constraints = RigidbodyConstraints.FreezeAll;
     }
 }

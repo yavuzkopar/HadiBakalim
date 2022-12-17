@@ -1,0 +1,645 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8563777865707617897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5403a132185ba749b56a1f25330e2c2, type: 3}
+  m_Name: 5382a648-f5fc-4fbf-8ff3-e13833830c4a
+  m_EditorClassIdentifier: 
+  whoisSpeaking: 0
+  isPlayerSpeaking: 0
+  text: quest Yok
+  children:
+  - c184e938-e61c-4e7f-b765-86440c6b7d01
+  rect:
+    serializedVersion: 2
+    x: 464
+    y: 402
+    width: 200
+    height: 100
+  actionToTrigger: 
+  kondisyonlar:
+  - '!QuestTaken(1)'
+  - HasKey
+--- !u!114 &-8532602772129089492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5403a132185ba749b56a1f25330e2c2, type: 3}
+  m_Name: ea7c91b1-0c21-42f2-b44e-4296513c3869
+  m_EditorClassIdentifier: 
+  whoisSpeaking: 0
+  isPlayerSpeaking: 0
+  text: "G\xFCzell"
+  children:
+  - b3f6e0d8-2246-495b-8985-9729995a7181
+  rect:
+    serializedVersion: 2
+    x: 897
+    y: 209
+    width: 200
+    height: 100
+  actionToTrigger: 
+  kondisyonlar: []
+--- !u!114 &-8424671766302400515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5403a132185ba749b56a1f25330e2c2, type: 3}
+  m_Name: c184e938-e61c-4e7f-b765-86440c6b7d01
+  m_EditorClassIdentifier: 
+  whoisSpeaking: 0
+  isPlayerSpeaking: 1
+  text: 
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 674
+    y: 402
+    width: 200
+    height: 100
+  actionToTrigger: 
+  kondisyonlar: []
+--- !u!114 &-8062141268946176161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5403a132185ba749b56a1f25330e2c2, type: 3}
+  m_Name: e0b77aa1-48f7-4250-be16-cd3470bb2418
+  m_EditorClassIdentifier: 
+  whoisSpeaking: 0
+  isPlayerSpeaking: 1
+  text: olur
+  children:
+  - 4e8574b6-463f-47de-b4eb-0232709d8fde
+  rect:
+    serializedVersion: 2
+    x: 1116
+    y: 0
+    width: 200
+    height: 100
+  actionToTrigger: 
+  kondisyonlar: []
+--- !u!114 &-7751483694339351273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5403a132185ba749b56a1f25330e2c2, type: 3}
+  m_Name: b3f6e0d8-2246-495b-8985-9729995a7181
+  m_EditorClassIdentifier: 
+  whoisSpeaking: 0
+  isPlayerSpeaking: 1
+  text: 
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1118
+    y: 207
+    width: 200
+    height: 100
+  actionToTrigger: 
+  kondisyonlar: []
+--- !u!114 &-7543593193200614547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5403a132185ba749b56a1f25330e2c2, type: 3}
+  m_Name: 704c6142-192b-4220-9da9-18cd21553922
+  m_EditorClassIdentifier: 
+  whoisSpeaking: 0
+  isPlayerSpeaking: 1
+  text: "Hay\u0131r"
+  children:
+  - a845c342-9ff4-42e0-b9ac-9f89f28bd272
+  rect:
+    serializedVersion: 2
+    x: 678
+    y: 324
+    width: 200
+    height: 100
+  actionToTrigger: 
+  kondisyonlar: []
+--- !u!114 &-7212651024172476969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5403a132185ba749b56a1f25330e2c2, type: 3}
+  m_Name: f746caef-83a5-4cc2-8c85-d6eee2c09a71
+  m_EditorClassIdentifier: 
+  whoisSpeaking: 0
+  isPlayerSpeaking: 0
+  text: "odandan memnun musun bakal\u0131m"
+  children:
+  - 34d368aa-09ce-4b2e-b769-87f845686e3a
+  - 704c6142-192b-4220-9da9-18cd21553922
+  rect:
+    serializedVersion: 2
+    x: 459
+    y: 269
+    width: 200
+    height: 100
+  actionToTrigger: 
+  kondisyonlar:
+  - HasKey
+  - '!QuestTaken(1)'
+--- !u!114 &-6091741132074635185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5403a132185ba749b56a1f25330e2c2, type: 3}
+  m_Name: c0ae477f-d6f9-4e04-8974-e3343cef6de8
+  m_EditorClassIdentifier: 
+  whoisSpeaking: 0
+  isPlayerSpeaking: 1
+  text: "Te\u015Fekk\xFCr ederim"
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1536
+    y: 0
+    width: 200
+    height: 100
+  actionToTrigger: HasKey
+  kondisyonlar: []
+--- !u!114 &-5189717551943884612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5403a132185ba749b56a1f25330e2c2, type: 3}
+  m_Name: 8bc4b244-b30d-41d1-8d22-fafc7f5b1e83
+  m_EditorClassIdentifier: 
+  whoisSpeaking: 0
+  isPlayerSpeaking: 0
+  text: quest var
+  children:
+  - f714756f-9b83-4320-b53a-4a12e8617dc8
+  rect:
+    serializedVersion: 2
+    x: 459
+    y: 515
+    width: 200
+    height: 100
+  actionToTrigger: 
+  kondisyonlar:
+  - HasKey
+  - QuestTaken(1)
+--- !u!114 &-3200270607954023398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5403a132185ba749b56a1f25330e2c2, type: 3}
+  m_Name: cb57f752-93fd-4e91-ad0d-2590eb2cc20a
+  m_EditorClassIdentifier: 
+  whoisSpeaking: 0
+  isPlayerSpeaking: 0
+  text: "Hey Ho\u015Fgeldin"
+  children:
+  - 8c96d921-d7bc-456c-8621-bc8614da5b55
+  rect:
+    serializedVersion: 2
+    x: 16
+    y: 153
+    width: 200
+    height: 100
+  actionToTrigger: 
+  kondisyonlar: []
+--- !u!114 &-2714044106139045015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5403a132185ba749b56a1f25330e2c2, type: 3}
+  m_Name: 60864d4a-a429-4211-946e-da7c0cb257b7
+  m_EditorClassIdentifier: 
+  whoisSpeaking: 0
+  isPlayerSpeaking: 0
+  text: "kalacak yerin var m\u0131?"
+  children:
+  - 4d367b94-cb9f-4469-ae50-310dd3382614
+  rect:
+    serializedVersion: 2
+    x: 462
+    y: 48
+    width: 200
+    height: 100
+  actionToTrigger: 
+  kondisyonlar:
+  - HasNoKey
+--- !u!114 &-2082042470739671955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5403a132185ba749b56a1f25330e2c2, type: 3}
+  m_Name: d51ec47a-c092-45ea-bd09-1a2c7105edbb
+  m_EditorClassIdentifier: 
+  whoisSpeaking: 0
+  isPlayerSpeaking: 0
+  text: "e\u011Fer bir oda istersen sana \xFCst katta bir yer ayarlayabilirim"
+  children:
+  - e0b77aa1-48f7-4250-be16-cd3470bb2418
+  - b39fa919-16a2-43c9-aea0-67296a9b3766
+  rect:
+    serializedVersion: 2
+    x: 880
+    y: 46
+    width: 200
+    height: 100
+  actionToTrigger: 
+  kondisyonlar: []
+--- !u!114 &-1963904720082420912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5403a132185ba749b56a1f25330e2c2, type: 3}
+  m_Name: d81800b4-63e3-4ce6-b080-c6ab81287b3c
+  m_EditorClassIdentifier: 
+  whoisSpeaking: 0
+  isPlayerSpeaking: 1
+  text: "Te\u015Fekk\xFCr ederim"
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1537
+    y: 95
+    width: 200
+    height: 100
+  actionToTrigger: 
+  kondisyonlar: []
+--- !u!114 &-1196685450019527932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5403a132185ba749b56a1f25330e2c2, type: 3}
+  m_Name: 72596665-808b-451e-b02e-779e269b31c1
+  m_EditorClassIdentifier: 
+  whoisSpeaking: 0
+  isPlayerSpeaking: 1
+  text: "istemez anahtar\u0131n\u0131 alabilirsin"
+  children:
+  - 7464eab8-2447-4223-ba7d-5447f77588f0
+  rect:
+    serializedVersion: 2
+    x: 1099
+    y: 324
+    width: 200
+    height: 100
+  actionToTrigger: RemoveKey
+  kondisyonlar: []
+--- !u!114 &-475535280728082861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5403a132185ba749b56a1f25330e2c2, type: 3}
+  m_Name: 34d368aa-09ce-4b2e-b769-87f845686e3a
+  m_EditorClassIdentifier: 
+  whoisSpeaking: 0
+  isPlayerSpeaking: 1
+  text: evet
+  children:
+  - ea7c91b1-0c21-42f2-b44e-4296513c3869
+  rect:
+    serializedVersion: 2
+    x: 678
+    y: 209
+    width: 200
+    height: 100
+  actionToTrigger: 
+  kondisyonlar: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6620e06ab08bea1428a3a2909632ae66, type: 3}
+  m_Name: Barmenle sohbet
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: -3200270607954023398}
+  - {fileID: 4692178482283332314}
+  - {fileID: -2714044106139045015}
+  - {fileID: -7212651024172476969}
+  - {fileID: 5743074007010304719}
+  - {fileID: -2082042470739671955}
+  - {fileID: -8062141268946176161}
+  - {fileID: 5247947145931303976}
+  - {fileID: 4652621375370985983}
+  - {fileID: 4825355057889843539}
+  - {fileID: -1963904720082420912}
+  - {fileID: -6091741132074635185}
+  - {fileID: -475535280728082861}
+  - {fileID: -7543593193200614547}
+  - {fileID: -8532602772129089492}
+  - {fileID: -7751483694339351273}
+  - {fileID: 5979030441553662011}
+  - {fileID: -1196685450019527932}
+  - {fileID: 2520507045283514985}
+  - {fileID: 8610807727936311924}
+  - {fileID: -8563777865707617897}
+  - {fileID: -5189717551943884612}
+  - {fileID: -8424671766302400515}
+  - {fileID: 6566817044305410173}
+--- !u!114 &2520507045283514985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5403a132185ba749b56a1f25330e2c2, type: 3}
+  m_Name: 7464eab8-2447-4223-ba7d-5447f77588f0
+  m_EditorClassIdentifier: 
+  whoisSpeaking: 0
+  isPlayerSpeaking: 0
+  text: sen bilirsin evlat
+  children:
+  - 1739bf2d-a162-408a-8339-6edbe5effcab
+  rect:
+    serializedVersion: 2
+    x: 1309
+    y: 324
+    width: 200
+    height: 100
+  actionToTrigger: 
+  kondisyonlar: []
+--- !u!114 &4652621375370985983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5403a132185ba749b56a1f25330e2c2, type: 3}
+  m_Name: 4e8574b6-463f-47de-b4eb-0232709d8fde
+  m_EditorClassIdentifier: 
+  whoisSpeaking: 0
+  isPlayerSpeaking: 0
+  text: "Al bakal\u0131m delikanl\u0131"
+  children:
+  - c0ae477f-d6f9-4e04-8974-e3343cef6de8
+  rect:
+    serializedVersion: 2
+    x: 1326
+    y: 0
+    width: 200
+    height: 100
+  actionToTrigger: 
+  kondisyonlar: []
+--- !u!114 &4692178482283332314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5403a132185ba749b56a1f25330e2c2, type: 3}
+  m_Name: 8c96d921-d7bc-456c-8621-bc8614da5b55
+  m_EditorClassIdentifier: 
+  whoisSpeaking: 0
+  isPlayerSpeaking: 1
+  text: hey
+  children:
+  - 60864d4a-a429-4211-946e-da7c0cb257b7
+  - f746caef-83a5-4cc2-8c85-d6eee2c09a71
+  - 5382a648-f5fc-4fbf-8ff3-e13833830c4a
+  - 8bc4b244-b30d-41d1-8d22-fafc7f5b1e83
+  rect:
+    serializedVersion: 2
+    x: 249
+    y: 153
+    width: 200
+    height: 100
+  actionToTrigger: 
+  kondisyonlar: []
+--- !u!114 &4825355057889843539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5403a132185ba749b56a1f25330e2c2, type: 3}
+  m_Name: ae953bd4-edd7-4fec-b85d-673d89f901c3
+  m_EditorClassIdentifier: 
+  whoisSpeaking: 0
+  isPlayerSpeaking: 0
+  text: peki sen bilirsin
+  children:
+  - d81800b4-63e3-4ce6-b080-c6ab81287b3c
+  rect:
+    serializedVersion: 2
+    x: 1327
+    y: 95
+    width: 200
+    height: 100
+  actionToTrigger: 
+  kondisyonlar: []
+--- !u!114 &5247947145931303976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5403a132185ba749b56a1f25330e2c2, type: 3}
+  m_Name: b39fa919-16a2-43c9-aea0-67296a9b3766
+  m_EditorClassIdentifier: 
+  whoisSpeaking: 0
+  isPlayerSpeaking: 1
+  text: olmaz
+  children:
+  - ae953bd4-edd7-4fec-b85d-673d89f901c3
+  rect:
+    serializedVersion: 2
+    x: 1117
+    y: 95
+    width: 200
+    height: 100
+  actionToTrigger: 
+  kondisyonlar: []
+--- !u!114 &5743074007010304719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5403a132185ba749b56a1f25330e2c2, type: 3}
+  m_Name: 4d367b94-cb9f-4469-ae50-310dd3382614
+  m_EditorClassIdentifier: 
+  whoisSpeaking: 0
+  isPlayerSpeaking: 1
+  text: yok maalesef
+  children:
+  - d51ec47a-c092-45ea-bd09-1a2c7105edbb
+  rect:
+    serializedVersion: 2
+    x: 674
+    y: 46
+    width: 200
+    height: 100
+  actionToTrigger: 
+  kondisyonlar: []
+--- !u!114 &5979030441553662011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5403a132185ba749b56a1f25330e2c2, type: 3}
+  m_Name: a845c342-9ff4-42e0-b9ac-9f89f28bd272
+  m_EditorClassIdentifier: 
+  whoisSpeaking: 0
+  isPlayerSpeaking: 0
+  text: "H\u0131mm sana yeni bir oda ayarlayal\u0131m o zaman"
+  children:
+  - 72596665-808b-451e-b02e-779e269b31c1
+  rect:
+    serializedVersion: 2
+    x: 889
+    y: 324
+    width: 200
+    height: 100
+  actionToTrigger: 
+  kondisyonlar: []
+--- !u!114 &6566817044305410173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5403a132185ba749b56a1f25330e2c2, type: 3}
+  m_Name: f714756f-9b83-4320-b53a-4a12e8617dc8
+  m_EditorClassIdentifier: 
+  whoisSpeaking: 0
+  isPlayerSpeaking: 1
+  text: 
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 669
+    y: 515
+    width: 200
+    height: 100
+  actionToTrigger: 
+  kondisyonlar: []
+--- !u!114 &8610807727936311924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5403a132185ba749b56a1f25330e2c2, type: 3}
+  m_Name: 1739bf2d-a162-408a-8339-6edbe5effcab
+  m_EditorClassIdentifier: 
+  whoisSpeaking: 0
+  isPlayerSpeaking: 1
+  text: 
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1519
+    y: 324
+    width: 200
+    height: 100
+  actionToTrigger: 
+  kondisyonlar: []
